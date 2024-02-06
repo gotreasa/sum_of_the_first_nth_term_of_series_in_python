@@ -1,2 +1,2 @@
-def print_the_title():
-    print("😊 Welcome to Dummy Kata")
+def series_sum(number: int) -> float:
+    raise ValueError("❗️ Input should be a number")
