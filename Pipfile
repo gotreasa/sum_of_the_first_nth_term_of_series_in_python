@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+pytest-describe = "*"
+pytest-describe-it = "*"
+pytest-html = "*"
+pytest-mock = "~=3.6.1"
+pytest-pspec = "*"
+pytest-watch = "*"
+
+[packages]
+
+[requires]
+python_version = "3"
+
+[scripts]
+coverage = "pytest tests/ --cache-clear"
+coverageHtml = "pytest tests/ --cov-report html"
+tests = "pytest tests"
+watchTests= "ptw tests/ modules/"
